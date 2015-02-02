@@ -11,7 +11,7 @@ int MainModule(int coeff, int a, int b) {
 	int mult_result = Mult(a,b);
 	int adjusted_result = AddjustUrgent(mult_result);
 
-	xParam = adjusted_result / safeCoef;
+	xParam = (float) adjusted_result / safeCoef;
 
 	if(xParam) {
 		result = 1;
