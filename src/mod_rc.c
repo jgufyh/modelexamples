@@ -6,9 +6,9 @@ int BuffCoefficient(int coeff);
 int RefineCoefficient(int coeff) {
 	int result = coeff;
 
-	if(coeff < 10) {
+	if(coeff < URGENT_THRESHOLD) {
 		result = AddjustUrgent(coeff);
-	} else if (coeff < 15){
+	} else if (coeff < NORMAL_THRESHOLD){
 		result = AdjustNormal(coeff);
 	} else {
 		// keep the coefficient unchanged
