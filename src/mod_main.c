@@ -13,7 +13,7 @@ int MainModule(int coeff, int a, int b) {
 
 	xParam = (float) adjusted_result / safeCoef;
 
-	if(xParam) {
+	if(xParam >= 1 ) {
 		result = 1;
 	} else {
 		result = 0;
