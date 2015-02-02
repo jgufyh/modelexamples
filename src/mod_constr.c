@@ -7,7 +7,7 @@ int ApplySafetyConstraints(int coeff) {
 
 	temp = coeff >> 2;
 
-	if(result > MAX_COEF) {
+	if(temp > MAX_COEF) {
 		temp = MAX_COEF;
 	}
 
